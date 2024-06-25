@@ -52,12 +52,44 @@ function get_crop_image()
     subplot(1, 2, 2);
     imshow(cropped_img);
     title('Cropped Image');
-
-    % Set figure size
-    % set(gcf, 'Position', [100, 100, 800, 400]);
     waitforbuttonpress;
     close(gcf);
+end
+function compare_interpolation_techniques()
+  
+    filename = './images/Tomato___Bacterial_spot.JPG';    
+    scale_factor = 0.5;          
+
+    % Read the image
+    img = imread(filename);
+
+    % Resize using different interpolation techniques
+    resized_nearest = resize_nearest_neighbor(img, scale_factor);
+    resized_bilinear = resize_bilinear(img, scale_factor);
+    resized_bicubic = resize_bicubic(img, scale_factor);
+
+    % Display original and resized images
+    figure;
+    subplot(2, 2, 1);
+    imshow(img);
+    title('Original Image');
+
+    subplot(2, 2, 2);
+    imshow(resized_nearest);
+    title('Nearest Neighbor');
+
+    subplot(2, 2, 3);
+    imshow(resized_bilinear);
+    title('Bilinear');
+
+    subplot(2, 2, 4);
+    imshow(resized_bicubic);
+    title('Bicubic');
+
+    waitforbuttonpress;
+    close(gcf);;
 end
 % gray_scale_test()
 % image_resize()
 % get_crop_image()
+compare_interpolation_techniques()
