@@ -91,5 +91,6 @@ function compare_interpolation_techniques()
 end
 % gray_scale_test()
 % image_resize()
-% get_crop_image()
-compare_interpolation_techniques()
+% get_crop_image()https://stockcake.com/i/underwater-deer-scene_1088628_999924
+% compare_interpolation_techniques()
+download_images('https://stockcake.com/')

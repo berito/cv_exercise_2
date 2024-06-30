@@ -9,7 +9,6 @@ function cropped_img = crop_image(img, top_left, bottom_right)
     height = y2 - y1 + 1;
     % Perform cropping
     cropped_img = img(y1:y2, x1:x2, :);
-
 end
 
 
