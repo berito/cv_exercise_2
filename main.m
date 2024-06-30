@@ -95,4 +95,5 @@ end
 % compare_interpolation_techniques()
 % download_images('https://stockcake.com/')
 % capture_camera_image()
-compare_color_spaces('./images/Tomato___Bacterial_spot.JPG')
+% compare_color_spaces('./images/Tomato___Bacterial_spot.JPG')
+extract_image_metadata('./images/Tomato___Bacterial_spot.JPG')
