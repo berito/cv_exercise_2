@@ -96,4 +96,10 @@ end
 % download_images('https://stockcake.com/')
 % capture_camera_image()
 % compare_color_spaces('./images/Tomato___Bacterial_spot.JPG')
-extract_image_metadata('./images/Tomato___Bacterial_spot.JPG')
+% extract_image_metadata('./images/Tomato___Bacterial_spot.JPG')
+% Example usage
+image_path ='./images/Tomato___Bacterial_spot.JPG';  % Replace with your image path
+scale_factor = 1.5;          % Example scale factor (adjust as needed)
+translation = 50;            % Example translation (adjust as needed)
+
+adjusted_image = scaling_translation(image_path, scale_factor, translation);
