@@ -6,7 +6,7 @@ function display_images(original_img, resized_img)
     subplot(1, 2, 1);
     imshow(original_img);
     title('Original Image');
-
+    % 
     % Display resized image
     subplot(1, 2, 2);
     imshow(resized_img);
